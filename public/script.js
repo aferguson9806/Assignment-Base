@@ -1,7 +1,7 @@
-let text = document.getElementById("textentry")[0];
+let textField = document.getElementById("textentry");
 
-text.addEventListener('oninput', getData);
+textField.addEventListener("input", getData);
 
 function getData(){
-    alert('Hello! This Worked!');
+    console.log("this worked");
 };
