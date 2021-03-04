@@ -1,4 +1,4 @@
-let textField = document.getElementById("textentry");
+let textField = document.getElementById('textentry');
 
 textField.addEventListener("input", getData);
 
