@@ -1,0 +1,9 @@
+.box {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.restaurants {
+    background-color: pink;
+    max-width: 50%;
+}
