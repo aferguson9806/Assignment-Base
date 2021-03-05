@@ -43,7 +43,7 @@ async function windowActions() {
 
           newDiv.classList.add('restaurants')
           
-          let resDataName = document.createElement("h4");
+          let resDataName = document.createElement("h2");
           let resDataAdd = document.createElement("h4");
           let resDataCata = document.createElement("h4");
           let cityHeader = document.createElement("h4");
