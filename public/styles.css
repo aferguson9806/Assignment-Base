@@ -42,3 +42,8 @@ ul {
     padding-left: 0px;
     min-width: 50%;
 }
+
+address {
+    font-family: "Shippori Mincho", serif;
+    margin: 5px;
+}

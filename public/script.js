@@ -1,3 +1,21 @@
+function titleCase(phrase) {
+    let to_combine = []
+    phrase = phrase.toLowerCase()
+    let words = phrase.split(' ');
+    words.forEach(word => {
+        let new_word = word.slice(0, 1).toUpperCase() + word.slice(1, word.length)
+        to_combine.push(new_word);
+    });
+    return(to_combine.join(' '))
+};
+
+
+
+
+
+
+
+
 async function windowActions() {
   const form = document.querySelector(".userform");
   const search = document.querySelector("#zipcity");
@@ -44,14 +62,14 @@ async function windowActions() {
           newDiv.classList.add('restaurants')
           
           let resDataName = document.createElement("h2");
-          let resDataAdd = document.createElement("h4");
+          let resDataAdd = document.createElement("address");
           let resDataCata = document.createElement("h4");
           let cityHeader = document.createElement("h4");
           
-          let divResName = document.createTextNode(restaurant.name);
+          let divResName = document.createTextNode(titleCase(restaurant.name));
           let divResAdd = document.createTextNode(restaurant.address_line_1);
-          let divResCata = document.createTextNode(restaurant.category);
-          let cityHeaderContent = document.createTextNode(restaurant.city);
+          let divResCata = document.createTextNode(titleCase(restaurant.category));
+          let cityHeaderContent = document.createTextNode(titleCase(restaurant.city));
           
           resDataName.appendChild(divResName);
           resDataAdd.appendChild(divResAdd);
